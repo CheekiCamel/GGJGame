@@ -15,11 +15,21 @@ public class PlayerMessage : MonoBehaviour
 
     public bool toLeft;
 
+    public Transform startOnL;
+    public Transform startOnR;
+    private Transform currentStartPosition;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         text = canvas.GetComponentInChildren<Text>();
         toLeft = false;
+        currentStartPosition = startOnL;
+    }
+
+    void Update()
+    {
+        
     }
 
     void FixedUpdate()
@@ -50,6 +60,7 @@ public class PlayerMessage : MonoBehaviour
         {
             rb.velocity = rb.velocity.normalized * maxSpeed;
         }
+//        transform.position = new Vector3(transform.position.x, transform.position.y, 0);
     }
 
     public bool GetInput()
@@ -70,16 +81,26 @@ public class PlayerMessage : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        //Phone Collisions
         if (other.tag == "Phone_L")
         {
             toLeft = false;
             rb.velocity = Vector3.zero;
+            currentStartPosition = startOnL;
         }
         else if (other.tag == "Phone_R")
         {
             toLeft = true;
             rb.velocity = Vector3.zero;
+            currentStartPosition = startOnR;
         }
+
+        //Obstacle Collisions
+        if (other.tag == "Obstacle")
+        {
+            transform.position = currentStartPosition.position;
+        }
+
     }
 
 }

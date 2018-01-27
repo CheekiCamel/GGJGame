@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 65577400743420040}
   m_Layer: 0
   m_Name: ObstacleMessageSpawnPoint
-  m_TagString: Errors
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
