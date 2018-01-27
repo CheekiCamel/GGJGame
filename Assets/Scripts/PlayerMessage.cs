@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Audio;
 
 public class PlayerMessage : MonoBehaviour
 {
@@ -32,6 +33,13 @@ public class PlayerMessage : MonoBehaviour
 
     public Animator animator;
 
+    public AudioClip leftPhone;
+    public AudioClip rightPhone;
+    public AudioClip vibrate;
+    public AudioSource audioSource;
+
+    public GameObject fadeController;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -44,6 +52,8 @@ public class PlayerMessage : MonoBehaviour
         currentSpeed = maxSpeed;
         animator = this.GetComponent<Animator>();
         isFading = false;
+        audioSource = GetComponent<AudioSource>();
+        
 
     }
 
@@ -182,6 +192,8 @@ public class PlayerMessage : MonoBehaviour
         {
             //transform.position = currentStartPosition.position;
             //canMove = false;
+            audioSource.clip = vibrate;
+            audioSource.Play();
             if (toLeft)
             {
                 animator.SetTrigger("FadeBackToBlue");
@@ -207,17 +219,33 @@ public class PlayerMessage : MonoBehaviour
             {
                 greenBubble.gameObject.SetActive(false);
                 blueBubble.gameObject.SetActive(true);
+                audioSource.clip = leftPhone;
+                audioSource.Play();
             }
             else
             {
                 greenBubble.gameObject.SetActive(true);
                 blueBubble.gameObject.SetActive(false);
+                audioSource.clip = rightPhone;
+                audioSource.Play();
             }
         }
         else
         {
+            if (toLeft)
+            {
+                audioSource.clip = leftPhone;
+                audioSource.Play();
+            }
+            else
+            {
+                audioSource.clip = rightPhone;
+                audioSource.Play();
+            }
+
             Debug.Log("Game completed");
-            //PUT END GAME CODE HERE
+            fadeController.GetComponent<MainSceneAudioFades>().InitiateEnd();
+            gameObject.SetActive(false);
         }
     }
 

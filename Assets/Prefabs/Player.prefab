@@ -58,6 +58,7 @@ GameObject:
   - component: {fileID: 65757758451033418}
   - component: {fileID: 114782825796315434}
   - component: {fileID: 95355877543454070}
+  - component: {fileID: 82256584763422040}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -189,6 +190,87 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.95, y: 0.4, z: 0.1}
   m_Center: {x: 0.01, y: 0.01, z: 0}
+--- !u!82 &82256584763422040
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1384074845110474}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24301952, guid: 0ac7fb39e445048d89688f69c2a1839a,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95355877543454070
 Animator:
   serializedVersion: 3
@@ -352,6 +434,11 @@ MonoBehaviour:
   messageCounter: 0
   isFading: 0
   animator: {fileID: 0}
+  leftPhone: {fileID: 8300000, guid: ec9feb9cbcd07c9428b6b16901569450, type: 3}
+  rightPhone: {fileID: 8300000, guid: b260a74e46652e540a17fbc7a7dc58e3, type: 3}
+  vibrate: {fileID: 8300000, guid: cc42c59998110554f93ac6086af460c0, type: 3}
+  audioSource: {fileID: 0}
+  fadeController: {fileID: 0}
 --- !u!212 &212638567718633708
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -384,7 +471,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ab888c5461de8ad4887830d91c08ad43, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 956e34afa7c0d9943952df93c4efb009, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -426,7 +513,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ca73d76fd163bec45ae54d9e37f1b140, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2ac82f4a02d8d9f42a613f91f0eb1f7b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 1
   m_FlipY: 0
