@@ -1259,6 +1259,11 @@ Prefab:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 114477327684879140, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 61925373179581536, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
     - {fileID: 143977328297799868, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
@@ -2503,6 +2508,7 @@ MonoBehaviour:
   toLeft: 0
   startOnL: {fileID: 977740444}
   startOnR: {fileID: 1094967017}
+  canMove: 0
 --- !u!54 &1841378194
 Rigidbody:
   m_ObjectHideFlags: 0

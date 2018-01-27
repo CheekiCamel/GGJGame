@@ -21,6 +21,10 @@ public class PlayerMessage : MonoBehaviour
 
     public bool canMove;
 
+    public List<string> messages = new List<string>();
+    public string currentMessage;
+    public int messageCounter;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -28,6 +32,9 @@ public class PlayerMessage : MonoBehaviour
         toLeft = false;
         currentStartPosition = startOnL;
         canMove = true;
+        currentMessage = messages[0];
+        messageCounter = 0;
+        text.text = currentMessage;
     }
 
     void LateUpdate()
@@ -122,15 +129,25 @@ public class PlayerMessage : MonoBehaviour
         //Phone Collisions
         if (other.tag == "Phone_L")
         {
+            if (toLeft)
+            {
+                NextMessage();
+            }
             toLeft = false;
             rb.velocity = Vector3.zero;
             currentStartPosition = startOnL;
+            
         }
         else if (other.tag == "Phone_R")
         {
+            if (!toLeft)
+            {
+                NextMessage();
+            }
             toLeft = true;
             rb.velocity = Vector3.zero;
             currentStartPosition = startOnR;
+            
         }
 
         //Obstacle Collisions
@@ -140,6 +157,22 @@ public class PlayerMessage : MonoBehaviour
             canMove = false;
         }
 
+    }
+
+    public void NextMessage()
+    {
+        if (messageCounter < messages.Count - 1)
+        {
+            Debug.Log("new mensgage pls");
+            messageCounter++;
+            currentMessage = messages[messageCounter];
+            text.text = currentMessage;
+        }
+        else
+        {
+            Debug.Log("Game completed");
+            //PUT END GAME CODE HERE
+        }
     }
 
 }
