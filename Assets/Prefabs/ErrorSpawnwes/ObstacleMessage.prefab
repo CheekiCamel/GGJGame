@@ -337,7 +337,7 @@ MonoBehaviour:
   isTop: 0
   spawnController: {fileID: 0}
   text: {fileID: 114933630290791644}
-  lifespan: 8
+  lifespan: 18
   lifespanTracker: 0
   timeDisplay: 0
 --- !u!212 &212280439426588118
