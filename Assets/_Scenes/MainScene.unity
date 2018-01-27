@@ -1033,6 +1033,18 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 212638567718633708, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 956e34afa7c0d9943952df93c4efb009,
+        type: 3}
+    - target: {fileID: 212827919383310440, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2ac82f4a02d8d9f42a613f91f0eb1f7b,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
   m_IsPrefabParent: 0
@@ -1426,7 +1438,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   previewOnGUI: 1
   enableGUILayout: 1
-  drawStateLabels: 0
+  drawStateLabels: 1
   enableStateLabelsInBuilds: 0
   GUITextureStateLabels: 1
   GUITextStateLabels: 1
