@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class ObstacleMessage : MonoBehaviour
 {
@@ -17,7 +16,8 @@ public class ObstacleMessage : MonoBehaviour
     public bool isTop;
     public GameObject spawnController;
 
-    public TextMeshPro text;
+    public Canvas canvas;
+    public Text text;
 
     //lifespan is how long this object lives for. tracker helps keeps track of when this needs to happen
     public float lifespan;
@@ -29,7 +29,8 @@ public class ObstacleMessage : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         string myMessage = messageStrings[Random.Range(0, messageStrings.Count)];
-        text.SetText(myMessage);
+        text = canvas.GetComponentInChildren<Text>();
+        text.text = myMessage;
     }
 
     void Update()

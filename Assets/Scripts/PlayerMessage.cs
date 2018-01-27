@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 using UnityEngine.Audio;
 
 public class PlayerMessage : MonoBehaviour
@@ -13,7 +12,8 @@ public class PlayerMessage : MonoBehaviour
 
     public SpriteRenderer greenBubble;
     public SpriteRenderer blueBubble;
-    public TextMeshPro text;
+    public Canvas canvas;
+    public Text text;
 
     private Rigidbody rb;
 
@@ -48,7 +48,8 @@ public class PlayerMessage : MonoBehaviour
         canMove = true;
         messageCounter = 0;
         currentMessage = messages[messageCounter];
-        text.SetText(currentMessage, true);
+        text = canvas.GetComponentInChildren<Text>();
+        text.text = currentMessage;
         currentSpeed = maxSpeed;
         animator = this.GetComponent<Animator>();
         isFading = false;
@@ -213,7 +214,7 @@ public class PlayerMessage : MonoBehaviour
             Debug.Log("new mensgage pls");
             messageCounter++;
             currentMessage = messages[messageCounter];
-            text.SetText(currentMessage, true);
+            text.text = currentMessage;
             transform.position = currentStartPosition.position;
             if (toLeft)
             {
