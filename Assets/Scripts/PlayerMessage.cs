@@ -180,8 +180,16 @@ public class PlayerMessage : MonoBehaviour
         //Obstacle Collisions
         if (other.tag == "Obstacle")
         {
-            transform.position = currentStartPosition.position;
-            canMove = false;
+            //transform.position = currentStartPosition.position;
+            //canMove = false;
+            if (toLeft)
+            {
+                animator.SetTrigger("FadeBackToBlue");
+            }
+            else
+            {
+                animator.SetTrigger("FadeBackToGreen");
+            }
         }
 
     }
@@ -195,6 +203,16 @@ public class PlayerMessage : MonoBehaviour
             currentMessage = messages[messageCounter];
             text.SetText(currentMessage, true);
             transform.position = currentStartPosition.position;
+            if (toLeft)
+            {
+                greenBubble.gameObject.SetActive(false);
+                blueBubble.gameObject.SetActive(true);
+            }
+            else
+            {
+                greenBubble.gameObject.SetActive(true);
+                blueBubble.gameObject.SetActive(false);
+            }
         }
         else
         {
@@ -213,6 +231,11 @@ public class PlayerMessage : MonoBehaviour
     {
         currentSpeed = maxSpeed;
         isFading = false;
+    }
+
+    public void BackToStart()
+    {
+        transform.position = currentStartPosition.position;
     }
 
 }

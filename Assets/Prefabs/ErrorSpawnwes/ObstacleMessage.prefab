@@ -282,17 +282,62 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   messageStrings:
-  - i hate eggs
-  - i just wanted to hang out :/
-  - yeah lol ok ur insane
-  - I can't do Thursday. Perhaps we could Friday?
-  - do you like memes? i dont,
+  - Wanna grab a bite after training tonight?
+  - idk i text him a while ago but he hasn't responded
+  - HI JAMES ITS YOUR GRANDMA HOT WEATHER TODAY WEAR HAT
+  - Ok, I'll send through the photos in a sec.
+  - I'm by the big tree, where abouts are you at?
+  - wow that's expensive :/ can't u do it for free??
+  - I'm not saying no, just that 'Stan and Chill' doesn't have the same vibe.
+  - hey can u please like my latest lets play video?
+  - THEY SPELT HIS NAME WRONG ON THE CAKE?!?
+  - "dude have you seen this \xAF\\_(\u30C4)_/\xAF lmao cool huh"
+  - but it's more fun to say 'hemlo' than 'hello'
+  - have you hear their latest track?
+  - ok that's the stupidest conspiracy theory you've had yet
+  - the guy who owns the repo hasn't given me commit privelages yet so
+  - Hi, just wondering if you were available for babysitting next Wednesday?
+  - It was an awesome show but this one drunk guy kept shouting in my face
+  - Or how about you stop playing that MOBA for like 5 minutes and play this??
+  - honestly I'm pretty sure I'm just cursed with bad luck at this point
+  - BUY MILK PLEASE
+  - I WOULD TELL YOU MORE BUT GOVERNMENT HAS HACKED THE WIFI XOXO NAN
+  - It's... 'Ditto', not 'Diddo'...
+  - This is Larry's Pizza. You're order has been confirmed. Pick up at 8:39
+  - Hi honey. It's going. to be very cold. Please take care.
+  - He managed to punch Thomas in the face before it got stopped lol
+  - 'Your verification code is: XQ8KL6'
+  - That film is like... only slightly above par.
+  - Dude I cannot wait for the uprising against mega-corporations
+  - Are you getting these texts? pls text back URGENT!!!!
+  - We got kicked off the greens for a single kiss :/
+  - If you ever send me that stupid meme again I will block you.
+  - I GOT LIKE 2 HOURS OF SLEEP OK HAVE SOME MERCY
+  - he legit literally said 'pixel art is easy' like??? piss off???
+  - Hi, I'm texting you to let you know someone found your phone.
+  - No we had an great time, she was awesome!
+  - I want to buy him a present but I have no clue what to get aaaaa
+  - ok sure but I won't need human emotion when i transcend to my ethereal form
+  - ok literally none of the texts you just sent me make any sense at all
+  - HOW DO I DELETE THAT PREVIOUS TEXT OMG
+  - if u don't follow me on twitter i'm ripping your birthday invitation in half
+  - I found some chill peeps but they ended up just saying my gear sucked :(
+  - yeah but they're version of 'be there at 6' is like 7:30 lol
+  - I'm going to give you a chance to re-think that last text
+  - I've had surgery that's been more pleasant than this conversation
+  - is it bad for me to take my meds with alchohol?
+  - I saw a doctor and it turns out it was a spider bite o_o
+  - '''hmmm yes i think a 16th male dj is really what this festival needs'' >.<'
+  - hey can you send me a dumb text as inspiration for my game?
+  - Do you get the bacon from the deli or in a pack on the shelf?
+  - GOOGLE HOW DO I CREATE AN EMOJI THANK YOU
+  - Hi - we've renewed your UNLIMITED 5GB. Enjoy!
   myMessage: 
   speed: 0
   isTop: 0
   spawnController: {fileID: 0}
   text: {fileID: 114933630290791644}
-  lifespan: 5
+  lifespan: 8
   lifespanTracker: 0
   timeDisplay: 0
 --- !u!212 &212280439426588118
