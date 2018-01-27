@@ -19,48 +19,70 @@ public class PlayerMessage : MonoBehaviour
     public Transform startOnR;
     private Transform currentStartPosition;
 
+    public bool canMove;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         text = canvas.GetComponentInChildren<Text>();
         toLeft = false;
         currentStartPosition = startOnL;
+        canMove = true;
     }
 
-    void Update()
+    void LateUpdate()
     {
-        
+        if (!canMove)
+        {
+            rb.velocity = Vector3.zero;
+        }
     }
 
     void FixedUpdate()
     {
-        if (GetInput())
+        if (canMove)
         {
-            if (toLeft)
+            if (GetInput())
             {
-                rb.AddForce(-transform.right * speedIncrementer, ForceMode.Impulse);
+                if (toLeft)
+                {
+                    rb.AddForce(-transform.right * speedIncrementer, ForceMode.Impulse);
+                }
+                else
+                {
+                    rb.AddForce(transform.right * speedIncrementer, ForceMode.Impulse);
+                }
             }
             else
             {
-                rb.AddForce(transform.right * speedIncrementer, ForceMode.Impulse);
+                if (rb.velocity.magnitude > speedIncrementer)
+                {
+                    rb.velocity = rb.velocity.normalized * (rb.velocity.magnitude - speedIncrementer);
+                }
+                else
+                {
+                    if (GetInputDown())
+                    {
+                        canMove = true;
+                    }
+                    rb.velocity = Vector3.zero;
+                }
             }
         }
         else
         {
-            if (rb.velocity.magnitude > speedIncrementer)
+            if (GetInputDown())
             {
-                rb.velocity = rb.velocity.normalized * (rb.velocity.magnitude - speedIncrementer);
+                canMove = true;
             }
-            else
-            {
-                rb.velocity = Vector3.zero;
-            }
+            rb.velocity = Vector3.zero;
         }
+
         if (rb.velocity.magnitude > maxSpeed)
         {
             rb.velocity = rb.velocity.normalized * maxSpeed;
         }
-//        transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+
     }
 
     public bool GetInput()
@@ -70,6 +92,22 @@ public class PlayerMessage : MonoBehaviour
             return true;
         }
         else if (Input.GetMouseButton(0))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool GetInputDown()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            return true;
+        }
+        else if (Input.GetMouseButtonDown(0))
         {
             return true;
         }
@@ -99,6 +137,7 @@ public class PlayerMessage : MonoBehaviour
         if (other.tag == "Obstacle")
         {
             transform.position = currentStartPosition.position;
+            canMove = false;
         }
 
     }
