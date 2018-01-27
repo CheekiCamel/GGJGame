@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 64d9b540abe6a0244bdbe032478f677a
+timeCreated: 1517037463
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Jesaya Free
+  fontNames:
+  - Jesaya Free
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
