@@ -7,6 +7,7 @@ using TMPro;
 public class PlayerMessage : MonoBehaviour
 {
     public float speedIncrementer;
+    public float currentSpeed;
     public float maxSpeed;
 
     public SpriteRenderer greenBubble;
@@ -27,6 +28,10 @@ public class PlayerMessage : MonoBehaviour
     public string currentMessage;
     public int messageCounter;
 
+    public bool isFading;
+
+    public Animator animator;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -36,12 +41,19 @@ public class PlayerMessage : MonoBehaviour
         messageCounter = 0;
         currentMessage = messages[messageCounter];
         text.SetText(currentMessage, true);
+        currentSpeed = maxSpeed;
+        animator = this.GetComponent<Animator>();
+        isFading = false;
 
     }
 
     void LateUpdate()
     {
         if (!canMove)
+        {
+            rb.velocity = Vector3.zero;
+        }
+        if (isFading)
         {
             rb.velocity = Vector3.zero;
         }
@@ -55,7 +67,8 @@ public class PlayerMessage : MonoBehaviour
 
     void FixedUpdate()
     {
-
+        if (!isFading)
+        {
             if (canMove)
             {
                 Debug.Log("input: " + GetInput());
@@ -85,9 +98,9 @@ public class PlayerMessage : MonoBehaviour
                         rb.velocity = Vector3.zero;
                     }
                 }
-                if (rb.velocity.magnitude > maxSpeed)
+                if (rb.velocity.magnitude > currentSpeed)
                 {
-                    rb.velocity = rb.velocity.normalized * maxSpeed;
+                    rb.velocity = rb.velocity.normalized * currentSpeed;
                 }
             }
             else
@@ -99,6 +112,11 @@ public class PlayerMessage : MonoBehaviour
                 rb.velocity = Vector3.zero;
             }
         }
+        else
+        {
+            rb.velocity = Vector3.zero;
+        }
+    }
 
 
     public bool GetInput()
@@ -140,8 +158,7 @@ public class PlayerMessage : MonoBehaviour
         {
             if (toLeft)
             {
-                greenBubble.gameObject.SetActive(true);
-                blueBubble.gameObject.SetActive(false);
+                animator.SetTrigger("FadeToGreen");
             }
             toLeft = false;
             rb.velocity = Vector3.zero;
@@ -152,8 +169,7 @@ public class PlayerMessage : MonoBehaviour
         {
             if (!toLeft)
             {
-                greenBubble.gameObject.SetActive(false);
-                blueBubble.gameObject.SetActive(true);
+                animator.SetTrigger("FadeToBlue");
             }
             toLeft = true;
             rb.velocity = Vector3.zero;
@@ -178,12 +194,25 @@ public class PlayerMessage : MonoBehaviour
             messageCounter++;
             currentMessage = messages[messageCounter];
             text.SetText(currentMessage, true);
+            transform.position = currentStartPosition.position;
         }
         else
         {
             Debug.Log("Game completed");
             //PUT END GAME CODE HERE
         }
+    }
+
+    public void StartFade()
+    {
+        currentSpeed = 0;
+        isFading = true;
+    }
+
+    public void EndFade()
+    {
+        currentSpeed = maxSpeed;
+        isFading = false;
     }
 
 }
