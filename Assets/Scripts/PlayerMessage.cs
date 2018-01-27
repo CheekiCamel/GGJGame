@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerMessage : MonoBehaviour
 {
     public float speedIncrementer;
     public float maxSpeed;
 
-    public Canvas canvas;
-    public Text text;
+    public SpriteRenderer greenBubble;
+    public SpriteRenderer blueBubble;
+    public TextMeshPro text;
 
     private Rigidbody rb;
 
@@ -28,13 +30,13 @@ public class PlayerMessage : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        text = canvas.GetComponentInChildren<Text>();
         toLeft = false;
         currentStartPosition = startOnL;
         canMove = true;
-        currentMessage = messages[0];
         messageCounter = 0;
-        text.text = currentMessage;
+        currentMessage = messages[messageCounter];
+        text.SetText(currentMessage, true);
+
     }
 
     void LateUpdate()
@@ -43,69 +45,76 @@ public class PlayerMessage : MonoBehaviour
         {
             rb.velocity = Vector3.zero;
         }
+
+    }
+
+    void Update()
+    {
+
     }
 
     void FixedUpdate()
     {
-        if (canMove)
-        {
-            if (GetInput())
+
+            if (canMove)
             {
-                if (toLeft)
+                Debug.Log("input: " + GetInput());
+                if (GetInput())
                 {
-                    rb.AddForce(-transform.right * speedIncrementer, ForceMode.Impulse);
+                    if (toLeft)
+                    {
+                        rb.AddForce(-transform.right * speedIncrementer, ForceMode.Impulse);
+                    }
+                    else
+                    {
+                        rb.AddForce(transform.right * speedIncrementer, ForceMode.Impulse);
+                    }
                 }
                 else
                 {
-                    rb.AddForce(transform.right * speedIncrementer, ForceMode.Impulse);
+                    if (rb.velocity.magnitude > speedIncrementer)
+                    {
+                        rb.velocity = rb.velocity.normalized * (rb.velocity.magnitude - speedIncrementer);
+                    }
+                    else
+                    {
+                        if (GetInputDown())
+                        {
+                            canMove = true;
+                        }
+                        rb.velocity = Vector3.zero;
+                    }
+                }
+                if (rb.velocity.magnitude > maxSpeed)
+                {
+                    rb.velocity = rb.velocity.normalized * maxSpeed;
                 }
             }
             else
             {
-                if (rb.velocity.magnitude > speedIncrementer)
+                if (GetInputDown())
                 {
-                    rb.velocity = rb.velocity.normalized * (rb.velocity.magnitude - speedIncrementer);
+                    canMove = true;
                 }
-                else
-                {
-                    if (GetInputDown())
-                    {
-                        canMove = true;
-                    }
-                    rb.velocity = Vector3.zero;
-                }
+                rb.velocity = Vector3.zero;
             }
         }
-        else
-        {
-            if (GetInputDown())
-            {
-                canMove = true;
-            }
-            rb.velocity = Vector3.zero;
-        }
 
-        if (rb.velocity.magnitude > maxSpeed)
-        {
-            rb.velocity = rb.velocity.normalized * maxSpeed;
-        }
-
-    }
 
     public bool GetInput()
     {
-        if (Input.GetKey(KeyCode.Space))
-        {
-            return true;
-        }
-        else if (Input.GetMouseButton(0))
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+            if (Input.GetKey(KeyCode.Space))
+            {
+                return true;
+            }
+            else if (Input.GetMouseButton(0))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
     }
 
     public bool GetInputDown()
@@ -131,7 +140,8 @@ public class PlayerMessage : MonoBehaviour
         {
             if (toLeft)
             {
-                NextMessage();
+                greenBubble.gameObject.SetActive(true);
+                blueBubble.gameObject.SetActive(false);
             }
             toLeft = false;
             rb.velocity = Vector3.zero;
@@ -142,7 +152,8 @@ public class PlayerMessage : MonoBehaviour
         {
             if (!toLeft)
             {
-                NextMessage();
+                greenBubble.gameObject.SetActive(false);
+                blueBubble.gameObject.SetActive(true);
             }
             toLeft = true;
             rb.velocity = Vector3.zero;
@@ -166,7 +177,7 @@ public class PlayerMessage : MonoBehaviour
             Debug.Log("new mensgage pls");
             messageCounter++;
             currentMessage = messages[messageCounter];
-            text.text = currentMessage;
+            text.SetText(currentMessage, true);
         }
         else
         {
