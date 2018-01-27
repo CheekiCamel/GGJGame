@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 65757758451033418}
   - component: {fileID: 114782825796315434}
   - component: {fileID: 95355877543454070}
-  - component: {fileID: 82256584763422040}
+  - component: {fileID: 82450953398286300}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -190,7 +190,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.95, y: 0.4, z: 0.1}
   m_Center: {x: 0.01, y: 0.01, z: 0}
---- !u!82 &82256584763422040
+--- !u!82 &82450953398286300
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -198,8 +198,7 @@ AudioSource:
   m_GameObject: {fileID: 1384074845110474}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24301952, guid: 0ac7fb39e445048d89688f69c2a1839a,
-    type: 2}
+  OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -434,11 +433,12 @@ MonoBehaviour:
   messageCounter: 0
   isFading: 0
   animator: {fileID: 0}
-  leftPhone: {fileID: 8300000, guid: ec9feb9cbcd07c9428b6b16901569450, type: 3}
-  rightPhone: {fileID: 8300000, guid: b260a74e46652e540a17fbc7a7dc58e3, type: 3}
+  leftPhone: {fileID: 8300000, guid: 6a5e1d888f6cf2b448dd3bf084023e60, type: 3}
+  rightPhone: {fileID: 8300000, guid: 3f018b366f8586a4390de7e9af4840be, type: 3}
   vibrate: {fileID: 8300000, guid: cc42c59998110554f93ac6086af460c0, type: 3}
   audioSource: {fileID: 0}
-  fadeController: {fileID: 0}
+  fadeController: {fileID: 1982634148556196, guid: ac894d137eb8f7a44bbc776532bb3c9d,
+    type: 2}
 --- !u!212 &212638567718633708
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class MainSceneAudioFades : MonoBehaviour
 {
@@ -32,12 +32,12 @@ public class MainSceneAudioFades : MonoBehaviour
 
     public void ToMainMenu()
     {
-        EditorSceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void InitiateEnd()
     {
-        animator.SetTrigger("ENDGAME");
+        ToMainMenu();
     }
 
 }

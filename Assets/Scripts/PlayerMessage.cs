@@ -53,7 +53,7 @@ public class PlayerMessage : MonoBehaviour
         animator = this.GetComponent<Animator>();
         isFading = false;
         audioSource = GetComponent<AudioSource>();
-        
+
 
     }
 
@@ -131,18 +131,18 @@ public class PlayerMessage : MonoBehaviour
 
     public bool GetInput()
     {
-            if (Input.GetKey(KeyCode.Space))
-            {
-                return true;
-            }
-            else if (Input.GetMouseButton(0))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+        if (Input.GetKey(KeyCode.Space))
+        {
+            return true;
+        }
+        else if (Input.GetMouseButton(0))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     public bool GetInputDown()
@@ -173,7 +173,7 @@ public class PlayerMessage : MonoBehaviour
             toLeft = false;
             rb.velocity = Vector3.zero;
             currentStartPosition = startOnL;
-            
+
         }
         else if (other.tag == "Phone_R")
         {
@@ -184,7 +184,7 @@ public class PlayerMessage : MonoBehaviour
             toLeft = true;
             rb.velocity = Vector3.zero;
             currentStartPosition = startOnR;
-            
+
         }
 
         //Obstacle Collisions
