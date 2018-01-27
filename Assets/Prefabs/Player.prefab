@@ -106,7 +106,7 @@ Transform:
   m_GameObject: {fileID: 1702804408455998}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.01}
-  m_LocalScale: {x: 0.05, y: 0.06, z: 0.06}
+  m_LocalScale: {x: 0.06, y: 0.065, z: 0.06}
   m_Children: []
   m_Father: {fileID: 4857621270199626}
   m_RootOrder: 0
@@ -119,7 +119,7 @@ Transform:
   m_GameObject: {fileID: 1100574213089084}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.01}
-  m_LocalScale: {x: 0.05, y: 0.06, z: 0.06}
+  m_LocalScale: {x: 0.06, y: 0.065, z: 0.06}
   m_Children: []
   m_Father: {fileID: 4857621270199626}
   m_RootOrder: 1
@@ -165,7 +165,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.95, y: 0.4, z: 0.1}
+  m_Size: {x: 1, y: 0.4, z: 0.1}
   m_Center: {x: 0.01, y: 0.01, z: 0}
 --- !u!82 &82450953398286300
 AudioSource:
@@ -181,7 +181,7 @@ AudioSource:
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
-  Mute: 0
+  Mute: 1
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -334,19 +334,34 @@ MonoBehaviour:
   maxSpeed: 2
   greenBubble: {fileID: 212638567718633708}
   blueBubble: {fileID: 212827919383310440}
+  canvas: {fileID: 223579553748940862}
+  text: {fileID: 0}
   toLeft: 0
   startOnL: {fileID: 0}
   startOnR: {fileID: 0}
   canMove: 0
   messages:
-  - u cool
-  - thamk
-  - yes ur wlecom
-  - i like potato
-  - no
-  - well consider the possiblilty
-  - yiou cannot spel gud
-  - hwo dyrew youy
+  - Hey, you up?
+  - Yeah, have been since like 6
+  - Oh, early night?
+  - Nope, just like no sleep
+  - How come?
+  - I've been doing the GGJ
+  - And?
+  - AND our game wouldn't build last night.
+  - Oh shit. Did you manage to fix it all?
+  - Reworked all the text this morning but yeah
+  - Damn. At least you got it all working.
+  - '*mostly working.'
+  - How do ya mean?
+  - I can't get the game to fade out anymore. Weird error.
+  - So, how does the game end now?
+  - It just kind of abruptly stops.
+  - Huh. That's not ideal.
+  - Yeah.
+  - Yeah.
+  - Cool.
+  - You should have ended the game 4 texts ago.
   currentMessage: 
   messageCounter: 0
   isFading: 0
@@ -518,5 +533,5 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.01, y: 0.03}
-  m_SizeDelta: {x: 267.3, y: 115.8}
+  m_SizeDelta: {x: 315.6, y: 174.8}
   m_Pivot: {x: 0.5, y: 0.5}

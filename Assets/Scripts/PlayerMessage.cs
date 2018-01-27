@@ -73,7 +73,10 @@ public class PlayerMessage : MonoBehaviour
 
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            NextMessage();
+        }
     }
 
     void FixedUpdate()

@@ -25,7 +25,7 @@ public class MainSceneAudioFades : MonoBehaviour
         audioToFade.volume = audioVolume;
 
         color.a = ((-audioVolume * 4))+1;
-        Debug.Log(((-audioVolume * 4))+1);
+        //Debug.Log(((-audioVolume * 4))+1);
         panel.color = color;
 
     }
@@ -37,6 +37,7 @@ public class MainSceneAudioFades : MonoBehaviour
 
     public void InitiateEnd()
     {
+        //animator.SetTrigger("ENDGAME");
         ToMainMenu();
     }
 

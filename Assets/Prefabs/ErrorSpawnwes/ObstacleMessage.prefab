@@ -274,7 +274,7 @@ MonoBehaviour:
     type: 2}
   canvas: {fileID: 223253957426581542}
   text: {fileID: 0}
-  lifespan: 18
+  lifespan: 25
   lifespanTracker: 0
   timeDisplay: 0
 --- !u!212 &212280439426588118
