@@ -230,6 +230,16 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!212 &46232978 stripped
+SpriteRenderer:
+  m_PrefabParentObject: {fileID: 212827919383310440, guid: 37ed50c5e123aa74c8613a7435398450,
+    type: 2}
+  m_PrefabInternal: {fileID: 1384883527}
+--- !u!212 &47330593 stripped
+SpriteRenderer:
+  m_PrefabParentObject: {fileID: 212638567718633708, guid: 37ed50c5e123aa74c8613a7435398450,
+    type: 2}
+  m_PrefabInternal: {fileID: 1670494900}
 --- !u!1 &73644348
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,6 +385,33 @@ Transform:
   m_PrefabParentObject: {fileID: 4374997272494922, guid: 04e636394aaf65f458c0519451b5a89d,
     type: 2}
   m_PrefabInternal: {fileID: 220458533}
+--- !u!1 &271209144 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1384074845110474, guid: 37ed50c5e123aa74c8613a7435398450,
+    type: 2}
+  m_PrefabInternal: {fileID: 1806561765}
+--- !u!114 &271209145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 271209144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 894b37cdac206f3459fa0776fff59ee1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  greenBubble: {fileID: 295702340}
+  blueBubble: {fileID: 1407006739}
+  canvas: {fileID: 2086003880}
+  text: {fileID: 0}
+  isGreen: 1
+  myMessage: Ok, chat tomorrow!
+--- !u!212 &295702340 stripped
+SpriteRenderer:
+  m_PrefabParentObject: {fileID: 212638567718633708, guid: 37ed50c5e123aa74c8613a7435398450,
+    type: 2}
+  m_PrefabInternal: {fileID: 1806561765}
 --- !u!1001 &317915346
 Prefab:
   m_ObjectHideFlags: 0
@@ -442,6 +479,17 @@ Prefab:
       propertyPath: messages.Array.data[13]
       value: I can't make it fade out anymore.
       objectReference: {fileID: 0}
+    - target: {fileID: 82450953398286300, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24301952, guid: 0ac7fb39e445048d89688f69c2a1839a,
+        type: 2}
+    - target: {fileID: 82450953398286300, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: Mute
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
   m_IsPrefabParent: 0
@@ -487,6 +535,28 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bbf3eea28477b5447adf03854072d864, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &472386127 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1384074845110474, guid: 37ed50c5e123aa74c8613a7435398450,
+    type: 2}
+  m_PrefabInternal: {fileID: 1531497864}
+--- !u!114 &472386128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 472386127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 894b37cdac206f3459fa0776fff59ee1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  greenBubble: {fileID: 2146345852}
+  blueBubble: {fileID: 591970096}
+  canvas: {fileID: 1521573109}
+  text: {fileID: 0}
+  isGreen: 1
+  myMessage: Ok, chat tomorrow!
 --- !u!1001 &517280526
 Prefab:
   m_ObjectHideFlags: 0
@@ -529,6 +599,16 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 27105bc332d54194ab224dd34a5499e6, type: 2}
   m_IsPrefabParent: 0
+--- !u!212 &591970096 stripped
+SpriteRenderer:
+  m_PrefabParentObject: {fileID: 212827919383310440, guid: 37ed50c5e123aa74c8613a7435398450,
+    type: 2}
+  m_PrefabInternal: {fileID: 1531497864}
+--- !u!212 &592699878 stripped
+SpriteRenderer:
+  m_PrefabParentObject: {fileID: 212827919383310440, guid: 37ed50c5e123aa74c8613a7435398450,
+    type: 2}
+  m_PrefabInternal: {fileID: 1670494900}
 --- !u!1001 &611757918
 Prefab:
   m_ObjectHideFlags: 0
@@ -603,6 +683,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4002941866049068, guid: b0630da63fc41ca488fd8ee05ddc213d,
     type: 2}
   m_PrefabInternal: {fileID: 611757918}
+--- !u!223 &690817596 stripped
+Canvas:
+  m_PrefabParentObject: {fileID: 223579553748940862, guid: 37ed50c5e123aa74c8613a7435398450,
+    type: 2}
+  m_PrefabInternal: {fileID: 1384883527}
 --- !u!43 &724006683
 Mesh:
   m_ObjectHideFlags: 0
@@ -890,6 +975,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 504ac540f382e7f4194bdff2986ab2ef, type: 2}
   m_IsPrefabParent: 0
+--- !u!223 &834958800 stripped
+Canvas:
+  m_PrefabParentObject: {fileID: 223579553748940862, guid: 37ed50c5e123aa74c8613a7435398450,
+    type: 2}
+  m_PrefabInternal: {fileID: 1670494900}
 --- !u!1 &898357224
 GameObject:
   m_ObjectHideFlags: 0
@@ -918,6 +1008,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &904042575 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1384074845110474, guid: 37ed50c5e123aa74c8613a7435398450,
+    type: 2}
+  m_PrefabInternal: {fileID: 1670494900}
+--- !u!114 &904042576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 904042575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 894b37cdac206f3459fa0776fff59ee1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  greenBubble: {fileID: 47330593}
+  blueBubble: {fileID: 592699878}
+  canvas: {fileID: 834958800}
+  text: {fileID: 0}
+  isGreen: 0
+  myMessage: Yeah, g'night!
 --- !u!4 &977740444 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4085205545265806, guid: 27105bc332d54194ab224dd34a5499e6,
@@ -1050,6 +1162,28 @@ Transform:
   m_PrefabParentObject: {fileID: 4684173861067922, guid: bbf3eea28477b5447adf03854072d864,
     type: 2}
   m_PrefabInternal: {fileID: 343922951}
+--- !u!1 &1107534092 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1384074845110474, guid: 37ed50c5e123aa74c8613a7435398450,
+    type: 2}
+  m_PrefabInternal: {fileID: 1384883527}
+--- !u!114 &1107534093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1107534092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 894b37cdac206f3459fa0776fff59ee1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  greenBubble: {fileID: 1561706245}
+  blueBubble: {fileID: 46232978}
+  canvas: {fileID: 690817596}
+  text: {fileID: 0}
+  isGreen: 0
+  myMessage: Yeah, g'night!
 --- !u!1 &1212411753
 GameObject:
   m_ObjectHideFlags: 0
@@ -1149,6 +1283,107 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1384883527
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782825796315434, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: startOnL
+      value: 
+      objectReference: {fileID: 977740444}
+    - target: {fileID: 114782825796315434, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: startOnR
+      value: 
+      objectReference: {fileID: 1094967017}
+    - target: {fileID: 4459820416776438, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4330589666145686, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 224745800252792612, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 268.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782825796315434, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: messages.Array.data[13]
+      value: I can't make it fade out anymore.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384074845110474, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_Name
+      value: PhoneRBottom
+      objectReference: {fileID: 0}
+    - target: {fileID: 1702804408455998, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100574213089084, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212827919383310440, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384074845110474, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_TagString
+      value: PhoneRBot
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114782825796315434, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+    - {fileID: 95355877543454070, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+    - {fileID: 82450953398286300, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+    - {fileID: 65757758451033418, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+    - {fileID: 54228462819106846, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+  m_IsPrefabParent: 0
+--- !u!212 &1407006739 stripped
+SpriteRenderer:
+  m_PrefabParentObject: {fileID: 212827919383310440, guid: 37ed50c5e123aa74c8613a7435398450,
+    type: 2}
+  m_PrefabInternal: {fileID: 1806561765}
 --- !u!1 &1445034402
 GameObject:
   m_ObjectHideFlags: 0
@@ -1327,6 +1562,104 @@ Transform:
   m_PrefabParentObject: {fileID: 4374997272494922, guid: 04e636394aaf65f458c0519451b5a89d,
     type: 2}
   m_PrefabInternal: {fileID: 1489868317}
+--- !u!223 &1521573109 stripped
+Canvas:
+  m_PrefabParentObject: {fileID: 223579553748940862, guid: 37ed50c5e123aa74c8613a7435398450,
+    type: 2}
+  m_PrefabInternal: {fileID: 1531497864}
+--- !u!1001 &1531497864
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782825796315434, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: startOnL
+      value: 
+      objectReference: {fileID: 977740444}
+    - target: {fileID: 114782825796315434, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: startOnR
+      value: 
+      objectReference: {fileID: 1094967017}
+    - target: {fileID: 4459820416776438, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4330589666145686, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 224745800252792612, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 268.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782825796315434, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: messages.Array.data[13]
+      value: I can't make it fade out anymore.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384074845110474, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_Name
+      value: PhoneRTop
+      objectReference: {fileID: 0}
+    - target: {fileID: 212827919383310440, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384074845110474, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_TagString
+      value: PhoneRTop
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114782825796315434, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+    - {fileID: 95355877543454070, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+    - {fileID: 82450953398286300, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+    - {fileID: 65757758451033418, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+    - {fileID: 54228462819106846, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+  m_IsPrefabParent: 0
+--- !u!212 &1561706245 stripped
+SpriteRenderer:
+  m_PrefabParentObject: {fileID: 212638567718633708, guid: 37ed50c5e123aa74c8613a7435398450,
+    type: 2}
+  m_PrefabInternal: {fileID: 1384883527}
 --- !u!1 &1562145376
 GameObject:
   m_ObjectHideFlags: 0
@@ -1435,7 +1768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   previewOnGUI: 1
   enableGUILayout: 1
-  drawStateLabels: 1
+  drawStateLabels: 0
   enableStateLabelsInBuilds: 0
   GUITextureStateLabels: 1
   GUITextStateLabels: 1
@@ -1456,6 +1789,108 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1670494900
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -3.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782825796315434, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: startOnL
+      value: 
+      objectReference: {fileID: 977740444}
+    - target: {fileID: 114782825796315434, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: startOnR
+      value: 
+      objectReference: {fileID: 1094967017}
+    - target: {fileID: 4459820416776438, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4330589666145686, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 224745800252792612, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 268.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782825796315434, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: messages.Array.data[13]
+      value: I can't make it fade out anymore.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384074845110474, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_Name
+      value: PhoneLBottom
+      objectReference: {fileID: 0}
+    - target: {fileID: 212638567718633708, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212827919383310440, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384074845110474, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212827919383310440, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384074845110474, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_TagString
+      value: PhoneLBot
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114782825796315434, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+    - {fileID: 95355877543454070, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+    - {fileID: 82450953398286300, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+    - {fileID: 65757758451033418, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+    - {fileID: 54228462819106846, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1745655271
 Prefab:
   m_ObjectHideFlags: 0
@@ -1558,6 +1993,104 @@ Transform:
   m_PrefabParentObject: {fileID: 4374997272494922, guid: 04e636394aaf65f458c0519451b5a89d,
     type: 2}
   m_PrefabInternal: {fileID: 1786926837}
+--- !u!1001 &1806561765
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -3.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857621270199626, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782825796315434, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: startOnL
+      value: 
+      objectReference: {fileID: 977740444}
+    - target: {fileID: 114782825796315434, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: startOnR
+      value: 
+      objectReference: {fileID: 1094967017}
+    - target: {fileID: 4459820416776438, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4330589666145686, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 224745800252792612, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 268.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782825796315434, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: messages.Array.data[13]
+      value: I can't make it fade out anymore.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384074845110474, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_Name
+      value: PhoneLTop
+      objectReference: {fileID: 0}
+    - target: {fileID: 212638567718633708, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212827919383310440, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212827919383310440, guid: 37ed50c5e123aa74c8613a7435398450,
+        type: 2}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384074845110474, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+      propertyPath: m_TagString
+      value: PhoneLTop
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114782825796315434, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+    - {fileID: 95355877543454070, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+    - {fileID: 82450953398286300, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+    - {fileID: 65757758451033418, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+    - {fileID: 54228462819106846, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 37ed50c5e123aa74c8613a7435398450, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1850686485
 GameObject:
   m_ObjectHideFlags: 0
@@ -1934,6 +2467,35 @@ Prefab:
       propertyPath: panel
       value: 
       objectReference: {fileID: 1977826373}
+    - target: {fileID: 114925239416451630, guid: ac894d137eb8f7a44bbc776532bb3c9d,
+        type: 2}
+      propertyPath: phoneRMessageTop
+      value: 
+      objectReference: {fileID: 472386128}
+    - target: {fileID: 114925239416451630, guid: ac894d137eb8f7a44bbc776532bb3c9d,
+        type: 2}
+      propertyPath: phoneRMessageBottom
+      value: 
+      objectReference: {fileID: 1107534093}
+    - target: {fileID: 114925239416451630, guid: ac894d137eb8f7a44bbc776532bb3c9d,
+        type: 2}
+      propertyPath: phoneLMessageTop
+      value: 
+      objectReference: {fileID: 271209145}
+    - target: {fileID: 114925239416451630, guid: ac894d137eb8f7a44bbc776532bb3c9d,
+        type: 2}
+      propertyPath: phoneLMessageBottom
+      value: 
+      objectReference: {fileID: 904042576}
+    - target: {fileID: 114925239416451630, guid: ac894d137eb8f7a44bbc776532bb3c9d,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982634148556196, guid: ac894d137eb8f7a44bbc776532bb3c9d, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ac894d137eb8f7a44bbc776532bb3c9d, type: 2}
   m_IsPrefabParent: 0
@@ -1967,6 +2529,11 @@ Transform:
   m_Father: {fileID: 2128668768}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!223 &2086003880 stripped
+Canvas:
+  m_PrefabParentObject: {fileID: 223579553748940862, guid: 37ed50c5e123aa74c8613a7435398450,
+    type: 2}
+  m_PrefabInternal: {fileID: 1806561765}
 --- !u!1 &2128668767
 GameObject:
   m_ObjectHideFlags: 0
@@ -2025,3 +2592,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2146345852 stripped
+SpriteRenderer:
+  m_PrefabParentObject: {fileID: 212638567718633708, guid: 37ed50c5e123aa74c8613a7435398450,
+    type: 2}
+  m_PrefabInternal: {fileID: 1531497864}

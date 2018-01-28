@@ -8,6 +8,10 @@ TagManager:
   - Phone_R
   - Center
   - Obstacle
+  - PhoneRTop
+  - PhoneRBot
+  - PhoneLTop
+  - PhoneLBot
   layers:
   - Default
   - TransparentFX

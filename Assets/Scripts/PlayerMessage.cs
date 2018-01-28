@@ -212,6 +212,8 @@ public class PlayerMessage : MonoBehaviour
 
     public void NextMessage()
     {
+
+        fadeController.GetComponent<MainSceneAudioFades>().UpdatePhone(currentMessage);
         if (messageCounter < messages.Count - 1)
         {
             Debug.Log("new mensgage pls");
